@@ -106,22 +106,23 @@ import res1 from '../tools/demo'
 console.log(TAG, "res = " + res1);
 import router from '@ohos.router'
 
-@Entry
-@Component
-struct Index {
-  @State message: string = 'Hello World'
+@Entry // 入口
+@Component // 组件
+struct Index { // 自定义组件
+  @State message: string = 'Hellooooo'
+  @State message1: string = 'Hellllllllll'
 
   build() {
     Row() {
       Column() {
         Text(this.message)
-          .fontSize(50)
+          .fontSize(20)
           .fontWeight(FontWeight.Bold)
         // 添加按钮1，以响应用户点击
         Button() {
           Text('Next1')
-            .fontSize(30)
-            .fontWeight(FontWeight.Bold)
+            .fontSize(20)
+            .fontWeight(FontWeight.Regular)
         }
         .type(ButtonType.Capsule)
         .margin({
@@ -142,7 +143,7 @@ struct Index {
         // 添加按钮2，以响应用户点击
         Button() {
           Text('Next2')
-            .fontSize(30)
+            .fontSize(20)
             .fontWeight(FontWeight.Bold)
         }
         .type(ButtonType.Capsule)
