@@ -133,7 +133,7 @@ struct Index { // 自定义组件
         .height('5%')
         .onClick(() => {
           console.info(`Succeeded in clicking the 'Next' button.`)
-          router.pushUrl({ url: 'pages/Second' }).then(() => {
+          router.pushUrl({ url: 'pages/Three' }).then(() => {
             console.info('Succeeded in jumping to the second page.')
           }).catch((err) => {
             console.error(`Failed to jump to the second page.Code is ${err.code}, message is ${err.message}`)
